@@ -14,7 +14,7 @@ class WelcomeView extends StatelessWidget{
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/image1.png'),
+                image: AssetImage('assets/images/Welcome.png'),
                 fit: BoxFit.cover,
               )
             ), 
@@ -49,13 +49,15 @@ class WelcomeView extends StatelessWidget{
                       children: const [
                         Text('Welcome', style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),),
                         SizedBox(height: 17,),
-                        Text('Train and live the new experience of\n exercising at home.', style: TextStyle(color: Colors.white,),),
+                        Text('Train and live the new experience of \nexercising at home.', style: TextStyle(color: Colors.white,),),
                       ],
                     ),
                   ),
                   const SizedBox(height: 30,),
                   TextButton(
-                    onPressed: (){}, 
+                    onPressed: (){
+                      Get.toNamed('/about');
+                    }, 
                     child: Container(
                       height: 50,
                       width: Get.width * 0.7,
