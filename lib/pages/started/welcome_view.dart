@@ -1,4 +1,5 @@
-import 'package:fitness_app/core/colors.dart';
+import 'package:fitness_app/routes/app_pages.dart';
+import 'package:fitness_app/shared/styles/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -56,7 +57,7 @@ class WelcomeView extends StatelessWidget{
                   const SizedBox(height: 30,),
                   TextButton(
                     onPressed: (){
-                      Get.toNamed('/about');
+                      Get.toNamed(Routes.ABOUT);
                     }, 
                     child: Container(
                       height: 50,

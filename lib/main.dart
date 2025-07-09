@@ -3,7 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get/route_manager.dart';
 
-import 'core/core.dart';
+import 'core.dart';
+
 
 
 void main() {

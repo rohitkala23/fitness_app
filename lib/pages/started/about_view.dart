@@ -1,5 +1,5 @@
-import 'package:fitness_app/core/colors.dart';
-import 'package:fitness_app/widgets/option_widget.dart';
+import 'package:fitness_app/shared/styles/colors.dart';
+import 'package:fitness_app/shared/widgets/option_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
