@@ -1,7 +1,7 @@
+import 'package:fitness_app/routes/app_pages.dart';
 import 'package:fitness_app/shared/styles/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
 class LoginView extends StatelessWidget{
   const LoginView({Key ? key}) : super(key: key);
@@ -69,17 +69,19 @@ class LoginView extends StatelessWidget{
     );
   }
 
-  Align forgetButton() {
+  Widget forgetButton() {
     return Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed(Routes.FORGET_PASSWORD);
+                    },
                     child: Text('Forgot your password', style: TextStyle(fontSize: 18, color: Colors.white),),
                   ),
                 );
   }
 
-  Column formLogin() {
+  Widget formLogin() {
     return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -123,7 +125,7 @@ class LoginView extends StatelessWidget{
                 );
   }
 
-  Container titleSubtitle() {
+  Widget titleSubtitle() {
     return Container(
                 height: Get.height*0.55,
                 width: Get.width,
@@ -171,7 +173,7 @@ class LoginView extends StatelessWidget{
               );
   }
 
-  Container backgroundImage() {
+  Widget backgroundImage() {
     return Container(
                 height: Get.height*0.55,
                 decoration: BoxDecoration(
